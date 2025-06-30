@@ -115,14 +115,22 @@ header{
     text-decoration: none;
     color: #282c3f;
     font-weight: 600;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+div .bag-container{
+    margin-top: 18px;
+}
+
+
+
 .action-name{
     font-size: 12px;
+
 }
 .banner-image{
     width: 100%;
@@ -132,45 +140,116 @@ header{
     margin: 40px 0;
 }
 
-#offer-heading{
-    text-transform: uppercase;
-    color: #3e4152;
-    letter-spacing: .15em;
-    font-size: 1.8em;
-    margin: 50px 0 10px 30px;
-    max-height: 5em;
-    font-weight: 700;
+.items-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px 10%;
+    justify-content: space-evenly;
+ 
 }
 
-#offer-items{
+.item-container{
+    width: 245px;
+    margin: 20px 10px;
+}
+
+.img{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
-#offer-items a img{
-    width: 250px ;
-}
-
-#category-heading{
-    text-transform: uppercase;
-    color: #3e4152;
-    letter-spacing: .15em;
-    font-size: 1.8em;
-    margin: 50px 0 10px 30px;
-    max-height: 5em;
+.rating{
+    font-size: 12px;
     font-weight: 700;
 }
 
-#category-items{
-     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.company-name{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+     text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item-name{
+    font-size: 14px;
+    color: #535766;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+}
+
+.price{
+    font-family: 14px;
+    line-height: 15px;
+    color: #282c3f;
+    white-space: nowrap;
+} 
+
+.current-price{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.original-price{
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.discount{
+    font-size: 12px;
+    color: #ff905a;
+    font-weight: 400;
+    margin-left: 5px;
+
+}
+
+.btn-add-to-cart{
+
+    width: 100%;
+    font-size: 18px;
+    margin-top: 6px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.bag_item_count{
+
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    left: 13px;
+    top: -44px;
+    font-weight: 700;
+
 }
 
 #footer-container{
+    margin-top: 100px;
     padding: 30px 0 40px 0;
     background-color: #fafbfc;
     display: flex;
@@ -200,7 +279,7 @@ header{
 .icon{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around ;
 }
 
 .icon a i{
