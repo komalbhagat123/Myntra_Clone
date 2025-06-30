@@ -81,7 +81,7 @@ function displayBagSummary() {
 
   let totalMRP = 0;
   let totalDiscount = 0;
-  bagItemObjects.length > 0 ? Convenience = 99 : Convenience = 0;
+  bagItemObjects.length > 0 ? Convenience = 99 : Convenience = 0; 
 
   bagItemObjects.forEach(bagItems => {
     totalMRP += bagItems.original_price;
